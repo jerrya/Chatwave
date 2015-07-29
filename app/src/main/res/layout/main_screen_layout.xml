@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="63"
+    android:background="@color/bg_register">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow_logo_bg"
+        android:layout_weight="3">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/chat2"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10">
+
+        <Button
+            android:id="@+id/mainMessages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_messages_selector"
+            android:gravity="center"
+            fontPath="fonts/Roboto-Thin.ttf"
+            android:textSize="35sp"
+            android:textColor="@color/white"
+            android:text="@string/messages"/>
+
+        <ImageView
+            android:id="@+id/mainMessagesCount"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/mainFriends"
+        android:layout_weight="10"
+        android:padding="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_friends_selector"
+        android:gravity="center"
+        fontPath="fonts/Roboto-Thin.ttf"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        android:text="@string/friends"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10">
+
+        <Button
+            android:id="@+id/mainRequests"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_requests_selector"
+            android:gravity="center"
+            fontPath="fonts/Roboto-Thin.ttf"
+            android:textSize="35sp"
+            android:textColor="@color/white"
+            android:text="@string/requests"/>
+
+        <ImageView
+            android:id="@+id/mainRequestsCount"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/mainAddFriend"
+        android:layout_weight="10"
+        android:padding="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_add_selector"
+        android:gravity="center"
+        fontPath="fonts/Roboto-Thin.ttf"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        android:text="@string/add_friend"/>
+
+    <Button
+        android:id="@+id/createSound"
+        android:layout_weight="10"
+        android:padding="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_send_selector"
+        android:gravity="center"
+        fontPath="fonts/Roboto-Thin.ttf"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        android:text="@string/send_sound"/>
+
+    <Button
+        android:id="@+id/createPicture"
+        android:layout_weight="10"
+        android:padding="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_photo_selector"
+        android:gravity="center"
+        fontPath="fonts/Roboto-Thin.ttf"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        android:text="@string/send_photo"/>
+
+</LinearLayout>

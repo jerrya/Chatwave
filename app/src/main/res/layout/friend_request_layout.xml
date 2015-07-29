@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix">
+
+    <ImageButton
+        android:id="@+id/requestBack"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/button_press"
+        android:textColor="@color/white"
+        android:src="@drawable/ic_hardware_keyboard_backspace"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bootstra_blue"
+        android:text="@string/requests"
+        fontPath="fonts/Roboto-Light.ttf"
+        android:textSize="22sp"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/white"
+        android:layout_toEndOf="@+id/requestBack"
+        android:layout_toRightOf="@+id/requestBack"/>
+
+    <ListView
+        android:layout_below="@+id/requestBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@android:id/list"
+        android:divider="@color/list_view_divider_bg"
+        android:dividerHeight="1dp"
+        android:background="@color/list_view_bg"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="18sp"
+        fontPath="fonts/Roboto-Thin.ttf"
+        android:textColor="@color/list_view_text"
+        android:text="@string/no_requests"
+        android:id="@android:id/empty"
+        android:layout_gravity="start|center_vertical"/>
+
+</RelativeLayout>

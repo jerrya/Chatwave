@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">ChatWave</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="no_requests">No Friend Requests</string>
+
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+
+    <string name="add">Add</string>
+
+    <string name="add_friend">Add Friend</string>
+    <string name="requests">Requests</string>
+    <string name="friends">Friends</string>
+    <string name="messages">Messages</string>
+    <string name="send_sound">Send Sound</string>
+    <string name="send_photo">Send Photo</string>
+
+    <string name="select_friends">Select Friends</string>
+    <string name="select_sound">Select Sound</string>
+
+    <string name="next">NEXT</string>
+
+    <string name="send">SEND</string>
+
+    <string name="back">back</string>
+
+    <string name="add_photo">Add Photo</string>
+
+    <string name="no_friends">No friends</string>
+
+</resources>

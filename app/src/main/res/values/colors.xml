@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bg_register">#2e3237</color>
+    <color name="bg_register_light">#41474E</color>
+
+    <color name="bg_main">#428bca</color>
+    <color name="white">#ffffff</color>
+    <color name="input_login">#222222</color>
+    <color name="input_login_hint">#999999</color>
+    <color name="input_register_bg">#3b4148</color>
+    <color name="input_register_hint">#5e6266</color>
+
+    <color name="green_logo_bg">#71de8c</color>
+    <color name="yellow_logo_bg">#ffea29</color>
+    <color name="blue_logo_bg">#72ded6</color>
+
+    <color name="main_screen_bg">#2093cd</color>
+    <color name="enter_button_bg">#deaf2a</color>
+    <color name="enter_button_bg_red">#eb1a52</color>
+
+    <color name="textcolor">#585858</color>
+    <color name="background">#f8f8f8</color>
+    <color name="chat_bg">#80c080</color>
+    <color name="text_msg_color">#b8b8b8</color>
+
+    <color name="list_view_bg">#eeeeee</color>
+    <color name="list_view_divider_bg">#e1e1e1</color>
+    <color name="list_view_text">#525252</color>
+
+    <color name="blue_main">#0087B8</color>
+    <color name="dark_blue">#2093cd</color>
+    <color name="main">#00adee</color>
+    <color name="actionbarcolor">#384e77</color>
+    <color name="bootstra_blue">#428bca</color>
+    <color name="bootstrap_dark_blue">#285F8F</color>
+
+    <color name="chatListItemBackground">#F5F6F8</color>
+    <color name="chatListItemHints">#86878B</color>
+    <color name="menuItems">#868789</color>
+    <color name="drawerListDivider">#58BA53</color>
+    <color name="drawerListBackground">#FFFFFF</color>
+    <color name="drawerListBackgroundPressed">#F0F9F0</color>
+    <color name="buttonBackground">#4AAD45</color>
+    <color name="buttonBackgroundPressed">#80C783</color>
+
+    <color name="main_purple">#9b58b5</color>
+    <color name="main_purple_dark">#6B3880</color>
+
+    <color name="main_orange">#e19504</color>
+    <color name="main_orange_dark">#8D5C02</color>
+
+    <color name="main_blue">#3598db</color>
+    <color name="main_blue_dark">#1C699C</color>
+
+    <color name="main_bluee">#34495e</color>
+    <color name="main_bluee_dark">#161F27</color>
+
+    <color name="main_green">#16a086</color>
+    <color name="main_green_dark">#0C5A4C</color>
+
+    <color name="main_photo">#fd7776</color>
+    <color name="main_photo_dark">#FC2222</color>
+
+    <color name="bg_trans">#55000000</color>
+
+</resources>

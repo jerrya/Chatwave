@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow_logo_bg">
+
+    <ImageView
+        android:id="@+id/mainScreenLogo"
+        android:layout_width="192dp"
+        android:layout_height="192dp"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/center_container"
+        android:src="@drawable/chat2"/>
+
+    <ImageView
+        android:id="@+id/mainScreenLogoText"
+        android:layout_width="192dp"
+        android:layout_height="192dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/chatwave_text"/>
+
+    <TextView
+        android:id="@+id/center_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        fontPath="fonts/Roboto-Light.ttf"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:background="@drawable/button_press"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:text="@string/sign_up"/>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_above="@id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        fontPath="fonts/Roboto-Light.ttf"
+        android:textSize="35sp"
+        android:background="@color/green_logo_bg"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="@string/login" />
+
+</RelativeLayout>

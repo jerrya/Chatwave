@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_view_bg">
+
+    <ImageButton
+        android:id="@+id/friendBack"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/button_press"
+        android:textColor="@color/white"
+        android:src="@drawable/ic_hardware_keyboard_backspace"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bootstra_blue"
+        fontPath="fonts/Roboto-Light.ttf"
+        android:text="@string/friends"
+        android:textSize="22sp"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/white"
+        android:layout_toEndOf="@+id/friendBack"
+        android:layout_toRightOf="@+id/friendBack"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/friends_list_refresh"
+        android:layout_below="@+id/friendBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@android:id/list"
+            android:divider="@color/list_view_divider_bg"
+            android:dividerHeight="0dp"
+            android:background="@color/list_view_bg"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@android:id/empty"/>
+
+</RelativeLayout>

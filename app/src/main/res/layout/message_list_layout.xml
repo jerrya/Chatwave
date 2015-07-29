@@ -1,0 +1,103 @@
+<com.sothree.slidinguppanel.SlidingUpPanelLayout
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sliding_layout"
+    xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:umanoPanelHeight="0dp"
+    sothree:umanoShadowHeight="4dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/list_view_bg"
+        android:id="@+id/top_message_layout">
+
+        <ImageButton
+            android:id="@+id/messageBack"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/button_press"
+            android:src="@drawable/ic_hardware_keyboard_backspace"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/bootstra_blue"
+            fontPath="fonts/Roboto-Light.ttf"
+            android:text="@string/messages"
+            android:gravity="start|center_vertical"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@+id/messageBack"
+            android:layout_toRightOf="@+id/messageBack"/>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/friends_list_refresh"
+            android:layout_below="@+id/messageBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:layout_below="@+id/messageBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@android:id/list"
+                android:divider="@color/list_view_divider_bg"
+                android:background="@color/list_view_bg"/>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@android:id/empty"/>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@color/list_view_bg"
+        android:id="@+id/slide_up_panel">
+
+        <ImageButton
+            android:id="@+id/messageReplyExit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/bootstra_blue"
+            android:src="@drawable/ic_content_clear" />
+
+        <GridView
+            android:id="@+id/gridview"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_below="@+id/messageReplyExit"
+            android:layout_above="@+id/messageReplySend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@drawable/grid_selector"
+            android:choiceMode="singleChoice"
+            android:verticalSpacing="0dp"
+            android:horizontalSpacing="0dp"
+            android:stretchMode="columnWidth"
+            android:numColumns="3" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/messageReplySend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            bootstrap:bb_icon_right="fa-rocket"
+            android:text="@string/send"
+            bootstrap:bb_type="primary" />
+
+    </RelativeLayout>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

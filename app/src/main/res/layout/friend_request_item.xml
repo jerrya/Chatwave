@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_view_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp">
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/requestName"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            fontPath="fonts/Roboto-Light.ttf"
+            android:layout_toRightOf="@+id/denyRequestBtn"
+            android:layout_toEndOf="@+id/denyRequestBtn"
+            android:layout_toLeftOf="@+id/acceptRequestBtn"
+            android:layout_toStartOf="@+id/acceptRequestBtn"
+            android:textSize="25sp"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:gravity="center"
+            android:textColor="@color/chatListItemHints"
+            android:minHeight="?android:attr/listPreferredItemHeightSmall"/>
+
+        <ImageButton
+            android:id="@+id/denyRequestBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_highlight_remove"
+            android:layout_margin="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/transparent"/>
+
+        <ImageButton
+            android:id="@+id/acceptRequestBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_content_add_circle_outline"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

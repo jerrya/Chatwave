@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_register"
+    android:weightSum="30">
+
+    <EditText
+        android:id="@+id/add_friend_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/input_register_bg"
+        android:singleLine="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:hint="@string/username"
+        android:textSize="45sp"
+        android:textColor="@color/white"
+        android:layout_weight="15"/>
+
+    <Button
+        android:id="@+id/add_friend_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/button_press"
+        android:text="@string/add"
+        android:textSize="45sp"
+        android:textColor="@color/white"
+        android:layout_weight="10"/>
+
+    <Button
+        android:id="@+id/add_friend_back"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/back"
+        android:textColor="@color/white"
+        android:background="@color/bootstrap_dark_blue"
+        android:layout_weight="5"/>
+
+</LinearLayout>
