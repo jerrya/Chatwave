@@ -161,14 +161,7 @@ public class ConnectionManager extends Service {
                     }
                 }
             });
-            // Android BroadcastReceivers have a timeout of 60 seconds.
-            // The connections reply timeout may be higher, which causes
-            // timeouts of the broadcast receiver and a subsequent ANR
-            // of the App of the broadcast receiver. We therefore need
-            // to call pingServerIfNecessary() in a new thread to avoid
-            // this. It could happen that the device gets back to sleep
-            // until the Thread runs, but that's a risk we are willing
-            // to take into account as it's unlikely.
+
             Async.go(new Runnable() {
                 @Override
                 public void run() {
